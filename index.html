@@ -165,17 +165,7 @@
       <mwc-switch id="toggleHotspots"><span>Show annotations</span></mwc-switch>
     </div>
 <!--     <paper-toggle-button id="toggleHotspots">Show annotations</paper-toggle-button> -->
-</model-viewer>
-
-<script type="module">
-    
-    toggleHotspots.addEventListener('change', () => {
-      modelViewer.classList.toggle('show-hotspots', toggleHotspots.checked);
-    });
-    
-  </script>
-
-    <section class="attribution">
+ <section class="attribution">
       <span>
         <h1>La fontana di Roberto Avelerio</h1>
         <span><a href="https://www.francovalente.it/2011/06/11/la-fontana-di-roberto-avalerio-a-s-maria-della-strada-di-matrice/" target="_blank">Vuoi saperne di più?</a></span>
@@ -187,6 +177,17 @@
     </section>
     
   </div>
+</model-viewer>
+
+<script type="module">
+    
+    toggleHotspots.addEventListener('change', () => {
+      modelViewer.classList.toggle('show-hotspots', toggleHotspots.checked);
+    });
+    
+  </script>
+
+   
   
   
   
