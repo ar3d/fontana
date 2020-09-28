@@ -143,15 +143,17 @@
 
   </head> 
 <body>
-  <div id="card">
-    <!-- All you need to put beautiful, interactive 3D content on your site: -->
-    <model-viewer src="fontana.glb"
-                  ios-src="fontana.usdz"
-                  alt="La fontana di Roberto Avelerio"
-                  shadow-intensity="1"
-                  camera-controls
-                  interaction-prompt="auto"
-                  auto-rotate ar magic-leap>
+     <!-- All you need to put beautiful, interactive 3D content on your site: -->
+   <model-viewer src="fontana.glb"
+                 ios-src="fontana.usdz"
+                alt="La fontana di Roberto Avelerio"
+                camera-target="0 0 0"
+                id="modelViewer"
+                autoplay
+                ar
+                ar-modes="webxr"
+                camera-controls> 
+
      <button slot="hotspot-1" class="hotspot" data-position="-0.024219385079838153m 1.7500286878006102m 0.05211279065617544m" data-normal="-0.11848916124402331m -0.043137772725384216m 0.9920178684035792m" data-visibility-attribute="visible">
         <div class="info">1800</div>
     </button>
